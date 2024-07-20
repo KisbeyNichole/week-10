@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ffa600, #ff5964);
+}
+
+.todo-app {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.todo-app h1 {
+    color: #3d0801;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+}
+
+ul li.checked {
+    color: #ab9491;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ab9491;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #ff858d;
+    color: #ffe7d9;
+}
